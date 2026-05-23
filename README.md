@@ -74,18 +74,18 @@
     - Other countires show moderate growth.
 
 ## Assumptions and limitations:
-Assumptions:
+1) Assumptions:
     - Null values can be handled during data analysis stage, where null values were filled using forward fill method.
     - Country names mismatch could be handled appropriately to ensure correct data retrieval.
         
-Limitations:
+2) Limitations:
     1. Data Availability:
         - 2025 data is not yet avaialable in World Bank API, so it is filled with 2024 values using forward fill.
-        - Some countires like US have missing values for all years for indicators Industry and Manufacturing due to which computing value added shares were impossible.
+         - Some countires like US have missing values for all years for indicators Industry and Manufacturing due to which computing value added shares were impossible.
     2. Country Mapping:
         - Country name in TOML must exactly match World Bank API names.
         - Some countires had a different spelling Turkey in TOML and Turkiye in API, caused mapping failure.
-        - The country name in TOML file was changed to Turkiye to ensure fetching of data.
+            - The country name in TOML file was changed to Turkiye to ensure fetching of data.
 
 ## References
 1. CAGR formula: https://www.investopedia.com/terms/c/cagr.asp
